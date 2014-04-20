@@ -21,3 +21,7 @@ How to use it:
 	6) install iron-router ($ mrt add iron-router)
 	7) add user accounts ($mrt add accounts-password                 $mrt add accounts-ui)
 	8) meteor
+
+Deployed URL:
+
+	http://sallesimplechat.meteor.com/
