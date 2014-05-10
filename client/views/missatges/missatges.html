@@ -1,0 +1,6 @@
+<template name="missatges">
+ <!-- Segon template, són tots els missatges que s'han escrit. Ens diu qui els ha escrit, a quina hora i el missatge-->
+  {{#each missatges}}
+  <strong>Missatge enviat a les {{time}} per {{nom}}:</strong> {{missatge}}<br>
+  {{/each}}
+</template>
