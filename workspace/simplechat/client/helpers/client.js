@@ -1,18 +1,18 @@
 Template.input.events = {
 //en funció de quin input tinguem farà una cosa o una altre
   'keydown input#missatge' : function (event) {
-    if (event.which == 13) { 
-	  // en cas de que apretin l'intro, el número d'event serà el 13, i per tant, entrarà aquí
+    if (event.which == 13) { // en cas de que apretin l'intro, el número d'event serà el 13, i per tant, entrarà aquí
       putmsj();
     }
   },
   'click #submit' : function (event) {
+      // pel cas de que hagin clicat enviar. Es fa exactament el mateix que abans.
       putmsj();
-  }
+    }
 }
 
-function putmsj() {
- var infoenviament = 'Enviat per ';
+function putmsj(){
+    var infoenviament = 'Enviat per ';
 	  // mira si l'usuari està logejat o no, en cas positiu indica el nom, en cas negatiu l'anomena anònim.
       if (Meteor.user())
         var nom = Meteor.user().username;
