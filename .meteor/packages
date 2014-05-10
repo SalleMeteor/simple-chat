@@ -4,8 +4,17 @@
 # but you can also edit it by hand.
 
 standard-app-packages
+<<<<<<< HEAD
 bootstrap-3
 accounts-password
 accounts-ui
 autopublish
 insecure
+=======
+autopublish
+insecure
+bootstrap-3
+iron-router
+accounts-password
+accounts-ui
+>>>>>>> bfd152813b084734058921815b460486161dc985

@@ -1,0 +1,34 @@
+<head>
+  <title>SimpleChat</title>
+</head>
+
+<body>
+  {{> loginButtons align="right"}}<br>
+  <h1>SimpleChat</h1>
+  <!-- cridem els templates-->
+  {{> benvinguda }}
+  {{> input }}
+  {{> missatges }}
+</body>
+
+
+<template name="benvinguda">
+ <!-- primer template, serà el Títol-->
+  <p>
+    Benvingut a SimpleChat!
+  </p>
+</template>
+
+<template name="missatges">
+ <!-- Segon template, són tots els missatges que s'han escrit. Ens diu qui els ha escrit, a quina hora i el missatge-->
+  {{#each missatges}}
+  <strong>Missatge enviat a les {{time}} per {{nom}}:</strong> {{missatge}}<br>
+  {{/each}}
+</template>
+
+<template name="input">
+ <!-- Template que serveix per a poder introduir els missatges, i a més, té un botó d'enviar per a que
+ aquests es publiquin. Aquest send "crida" a una funció del client.js-->
+  <p>Missatge a enviar: <input type="text" id="missatge" size="50">
+  <input type="button" id="submit" class="btn btn-success" value="Send"></p>
+</template>

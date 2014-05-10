@@ -1,5 +1,10 @@
 {
   "packages": {
+<<<<<<< HEAD
     "bootstrap-3": {}
+=======
+    "bootstrap-3": {},
+    "iron-router": {}
+>>>>>>> bfd152813b084734058921815b460486161dc985
   }
 }
